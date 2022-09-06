@@ -1,0 +1,315 @@
+/* Import font from google */
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700);
+
+
+body {
+   background-color: rgb(200, 200, 200);
+   font-family: sans-serif;
+   margin: 0;
+   padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   font-family: 'Open Sans', sans-serif;
+}
+
+#topo,
+.destaques,
+section {
+   width: 900px;
+   margin: 0 auto;
+}
+
+#topo h1 {
+   animation: introducao 2s linear infinite alternate;
+   -webkit-animation: introducao 2s linear infinite alternate;
+   -moz-animation: introducao 2s linear infinite alternate;
+}
+
+@-webkit-keyframes introducao {
+   0% {
+      color: red;
+      -webkit-transform: rotate(0deg);
+   }
+
+   25% {
+      color: blue;
+      -webkit-transform: rotate(5deg) scale(1.2);
+   }
+
+   50% {
+      color: green;
+      -webkit-transform: rotate(0deg);
+   }
+
+   75% {
+      color: purple;
+      -webkit-transform: rotate(-5deg) scale(1.2);
+   }
+
+   100% {
+      color: red;
+      -webkit-transform: rotate(0deg);
+   }
+}
+
+@keyframes introducao {
+   0% {
+      color: red;
+      -webkit-transform: rotate(0deg);
+   }
+
+   25% {
+      color: blue;
+      -webkit-transform: rotate(5deg) scale(1.2);
+   }
+
+   50% {
+      color: green;
+      -webkit-transform: rotate(0deg);
+   }
+
+   75% {
+      color: purple;
+      -webkit-transform: rotate(-5deg) scale(1.2);
+   }
+
+   100% {
+      color: red;
+      -webkit-transform: rotate(0deg);
+   }
+}
+
+.destaques li:hover {
+   -webkit-transform: scale(1.1);
+   -moz-transform: scale(1.1);
+   transform: scale(1.1);
+   -webkit-transition: all 500ms linear;
+   -moz-transition: all 500ms linear;
+   transition: all 500ms linear;
+}
+
+.destaques li strong {
+   width: 100%;
+   display: block;
+}
+
+.center {
+   text-align: center;
+}
+
+table,
+tr,
+td {
+   border: 1px solid #000;
+}
+
+table {
+   background-color: #ddd;
+}
+
+form fieldset {
+   border: none;
+}
+
+form legend {
+   text-transform: uppercase;
+   font-size: 1.2em;
+   padding: 0;
+   width: 100%;
+   border-bottom: 1px solid #555;
+}
+
+form label,
+form input:not([type=checkbox]),
+form select,
+form textarea {
+   width: 100%;
+}
+
+form div {
+   width: 48%;
+   margin: 0 1%;
+   height: 180px;
+   float: left;
+}
+
+button {
+   padding: 10px 20px;
+   background-color: blue;
+   color: #fff;
+   border: none;
+   -webkit-border-radius: 5px;
+   -moz-border-radius: 5px;
+   border-radius: 5px;
+}
+
+#rodape {
+   width: 100%;
+   background-color: #333;
+   color: #ccc;
+   float: left;
+   text-align: center;
+}
+
+#rodape li {
+   display: inline;
+}
+
+@media (min-width: 576px) {
+
+   /* Minimo 576px para Celulares*/
+   .destaques li {
+      width: 50%;
+      margin: 0.5%;
+      height: 250px;
+      float: left;
+   }
+
+   .mensagem {
+      width: 80%;
+      margin: 0.5%;
+      height: 300px;
+      float: left;
+   }
+
+   #rodape li {
+      width: 100%;
+      margin: 0.5%;
+      height: 100%;
+      float: left;
+      margin-top: 6%;
+   }
+
+   .botoes {
+      width: 100%;
+      margin: 0.5%;
+      height: 100%;
+      float: left;
+      margin-top: 6%;
+   }
+
+   .cadastro {
+      width: 100%;
+      margin: 0.5%;
+      height: 800px;
+      float: left;
+      margin-top: 6%;
+   }
+
+   .produtos {
+      width: 100%;
+      margin: 0.5%;
+      height: 850px;
+      float: left;
+   }
+}
+
+@media (min-width: 768px) {
+
+   /* Minimo 768px para Tablets*/
+   .destaques li {
+      width: 40%;
+      margin: 0.5%;
+      height: 250px;
+      float: left;
+   }
+
+   .mensagem {
+      width: 80%;
+      margin: 0.5%;
+      height: 250px;
+      float: left;
+   }
+
+   #rodape li {
+      width: 100%;
+      margin: 0.5%;
+      height: 100%;
+      float: left;
+   }
+
+   .botoes {
+      width: 100%;
+      margin: 0.5%;
+      height: 100%;
+      float: left;
+      margin-top: 1%;
+   }
+}
+
+@media (min-width: 992px) {
+
+   /* Minimo 992px para Desktop*/
+   .destaques li {
+      width: 30%;
+      margin: 0.5%;
+      height: 250px;
+      float: left;
+   }
+
+   .mensagem {
+      width: 50%;
+      margin: 0.5%;
+      height: 250px;
+      float: left;
+   }
+}
+
+@media (min-width: 1200px) {
+
+   /* Minimo 1200px para Tela Grande*/
+   .destaques li {
+      width: 24%;
+      margin: 0.5%;
+      height: 250px;
+      float: left;
+   }
+
+   .mensagem {
+      width: 25%;
+      margin: 0.5%;
+      height: 250px;
+      float: left;
+   }
+}
+
+.mainmenubtn {
+   background-color: blue;
+   color: white;
+   border: none;
+   cursor: pointer;
+   padding: 20px;
+   margin-top: 20px;
+}
+
+.mainmenubtn:hover {
+   background-color: black;
+}
+
+.dropdown {
+   position: relative;
+   display: inline-block;
+}
+
+.dropdown-child {
+   display: none;
+   background-color: blue;
+   min-width: 200px;
+}
+
+.dropdown-child a {
+   color: black;
+   padding: 20px;
+   text-decoration: none;
+   display: block;
+}
+
+.dropdown:hover .dropdown-child {
+   display: block;
+}
